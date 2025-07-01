@@ -1,0 +1,1 @@
+// Carousel for featured products

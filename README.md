@@ -1,2 +1,2 @@
 # EOz MVP
-Smart Home Automation eCommerce platform.
+Smart Home Automation site built with Next.js

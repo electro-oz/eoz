@@ -1,0 +1,1 @@
+{ "name": "eoz", "scripts": { "dev": "next dev", "start": "node server/index.js" } }

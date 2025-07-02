@@ -1,0 +1,1 @@
+export default function ProductCarousel(){return <div>ProductCarousel Section</div>;}

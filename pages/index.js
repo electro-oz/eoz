@@ -2,6 +2,7 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
+import Filters from '../components/Filters';
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
 
       {/* 2) Render the Hero section */}
       <Hero />
+
+      {/* Quick Filters goes here */}
+      <Filters />
 
       {/* 3) Your existing main content */}
       <main style={{ padding: '2rem', textAlign: 'center' }}>

@@ -1,1 +1,44 @@
-.filtersSection { padding:2rem; }
+.filtersSection {
+  background: var(--color-surface-light);
+  padding: var(--space-6) 0;
+}
+.dark .filtersSection {
+  background: var(--color-surface-dark);
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+.filterItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-text-light);
+  padding: var(--space-4);
+  width: 120px;
+  background: var(--color-bg-light);
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+.dark .filterItem {
+  color: var(--color-text-dark);
+  background: var(--color-surface-dark);
+}
+.filterItem:hover {
+  background: var(--color-surface-light);
+}
+.dark .filterItem:hover {
+  background: var(--color-surface-dark);
+}
+.icon {
+  font-size: 2rem;
+}
+.label {
+  margin-top: var(--space-2);
+  font-size: 0.875rem;
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+.hero {
+  background: var(--color-primary);
+  color: #fff;
+  padding: var(--space-8) var(--space-4);
+  text-align: center;
+}
+.content {
+  max-width: 800px;
+  margin: auto;
+}
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: var(--space-4);
+}
+.button {
+  background: var(--color-secondary);
+  color: #000;
+  padding: var(--space-2) var(--space-4);
+  border-radius: 4px;
+  font-weight: 600;
+}

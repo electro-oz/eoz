@@ -1,0 +1,9 @@
+.banner {
+  background: var(--color-primary);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: var(--space-8);
+  padding: var(--space-2);
+  font-size: 0.875rem;
+}

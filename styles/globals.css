@@ -1,16 +1,10 @@
-
-/* globals.css */
-
-html,
-body {
-  padding: 0;
+html, body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Helvetica Neue, sans-serif;
   background: #ffffff;
   color: #000000;
 }
-
 * {
   box-sizing: border-box;
 }

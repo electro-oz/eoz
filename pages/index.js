@@ -2,7 +2,7 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-import Filters from '../components/Filters';
+import Filters from '../components/Filters'
 
 export default function Home() {
   return (

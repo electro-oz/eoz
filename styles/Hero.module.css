@@ -7,17 +7,13 @@
   text-align: center;
 }
 
-.content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-h1 {
+/* Scope your h1 and p to inside .heroSection */
+:global(.heroSection h1) {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-p {
+:global(.heroSection p) {
   font-size: 1.25rem;
   margin-bottom: 2rem;
 }

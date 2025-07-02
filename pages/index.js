@@ -1,17 +1,27 @@
-import Head from 'next/head';
-import Header from '../components/Header';
+// pages/index.js
+import Head from 'next/head'
+import Header from '../components/Header'
+import Hero from '../components/Hero'
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>EOz - JS Starter</title>
+        <title>EOz – Your Smart Home Solution</title>
+        <meta name="description" content="Elevate your home with smart automation" />
       </Head>
+
+      {/* 1) Render your Header */}
       <Header />
+
+      {/* 2) Render the Hero section */}
+      <Hero />
+
+      {/* 3) Your existing main content */}
       <main style={{ padding: '2rem', textAlign: 'center' }}>
-        <h1>EOz - JS Starter</h1>
-        <p>This is a minimal JS-based Next.js setup.</p>
+        <h1>Welcome to EOz</h1>
+        <p>Your Smart Home Solution</p>
       </main>
     </>
-  );
+  )
 }

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Header from '../components/AnnouncementBanner';
+import AnnouncementBanner from '../components/AnnouncementBanner';
 import Header from '../components/Header';
 import HeroCarousel from '../components/HeroCarousel';
 import Filters from '../components/Filters';

@@ -1,3 +1,4 @@
+/* styles/Filters.module.css */
 .filtersSection {
   padding: 2rem 0;
   background: var(--color-bg, #f9f9f9);
@@ -23,7 +24,11 @@
   background: rgba(0, 0, 0, 0.05);
   border-radius: 8px;
 }
-.filterItem span {
+.icon {
+  font-size: 2rem;
+}
+.label {
   margin-top: 0.5rem;
   font-size: 0.875rem;
+  text-align: center;
 }

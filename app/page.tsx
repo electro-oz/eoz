@@ -1,8 +1,20 @@
-export default function Home() {
+export default function HomePage() {
   return (
-    <main style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-      <h1>EOz — Smart Home Solutions</h1>
-      <p>This is a test page to verify Vercel deployment works using App Router.</p>
+    <main style={{ textAlign: "center", padding: "40px" }}>
+      <h1><strong>Header Section</strong></h1>
+      <p>This is the placeholder for the Header component.</p>
+
+      <h1><strong>Hero Section</strong></h1>
+      <p>This is the placeholder for the Hero component.</p>
+
+      <h1><strong>Filters Section</strong></h1>
+      <p>This is the placeholder for the Filters component.</p>
+
+      <h1><strong>ProductCarousel Section</strong></h1>
+      <p>This is the placeholder for the ProductCarousel component.</p>
+
+      <h1><strong>Testimonials Section</strong></h1>
+      <p>This is the placeholder for the Testimonials component.</p>
     </main>
   );
 }

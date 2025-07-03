@@ -1,15 +1,8 @@
-import styles from '../styles/Hero.module.css';
-
 export default function Hero() {
   return (
-    <section className={styles.heroSection}>
-      <div className={styles.content}>
-        <h1 className={styles.title}>Elevate Your Home with Smart Automation</h1>
-        <p className={styles.subtitle}>
-          Discover smart switches, sensors, and lighting solutions designed to make your life easier.
-        </p>
-        <a href="/shop" className={styles.ctaButton}>Shop Now</a>
-      </div>
+    <section style={{ padding:'4rem 1rem', textAlign:'center', background:'#111 url(/logo.png) no-repeat center/cover' }}>
+      <h2 style={{ fontSize:'2.5rem', color:'#fff' }}>Welcome to EOz<br/>Your Smart Home Solution</h2>
+      <a href="#products" style={{ marginTop:'1rem', display:'inline-block', padding:'0.75rem 1.5rem', background:'#0cf', color:'#000', borderRadius:4 }}>Shop Now</a>
     </section>
   );
 }

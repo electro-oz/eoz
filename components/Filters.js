@@ -1,24 +1,18 @@
-import styles from '../styles/Filters.module.css';
-
-const filters = [
-  { name: 'Smart Switches', emoji: '🔌', link: '/smart-switches' },
-  { name: 'Curtain Drivers', emoji: '🪟', link: '/curtain-drivers' },
-  { name: 'Sensors', emoji: '🛡️', link: '/sensors' },
-  { name: 'Smart Lights', emoji: '💡', link: '/lights' },
-  { name: 'Matter Products', emoji: '⚡', link: '/matter-products' },
-];
-
 export default function Filters() {
+  const cats = [
+    { name: 'Smart Switches', icon: '🔲' },
+    { name: 'Smart Curtain Drivers', icon: '🚪' },
+    { name: 'Smart Sensors', icon: '📡' },
+    { name: 'Smart Lights', icon: '💡' },
+  ];
   return (
-    <section className={styles.filtersSection}>
-      <div className={styles.container}>
-        {filters.map(({ name, emoji, link }) => (
-          <a key={name} href={link} className={styles.filterItem}>
-            <span className={styles.icon}>{emoji}</span>
-            <span className={styles.label}>{name}</span>
-          </a>
-        ))}
-      </div>
+    <section id="products" style={{ padding:'2rem 1rem', display:'flex', justifyContent:'center', gap:'1rem', flexWrap:'wrap' }}>
+      {cats.map(c => (
+        <a key={c.name} href="#" style={{ display:'flex', flexDirection:'column', alignItems:'center', padding:'1rem', background:'#222', borderRadius:6, color:'#fff', textDecoration:'none' }}>
+          <span style={{ fontSize:'1.5rem' }}>{c.icon}</span>
+          <span>{c.name}</span>
+        </a>
+      ))}
     </section>
   );
 }

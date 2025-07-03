@@ -1,10 +1,9 @@
 import Head from 'next/head';
-import AnnouncementBanner from '../components/AnnouncementBanner';
 import Header from '../components/Header';
-import HeroCarousel from '../components/HeroCarousel';
+import Hero from '../components/Hero';
 import Filters from '../components/Filters';
-import UseCases from '../components/UseCases';
-import TestimonialsCarousel from '../components/TestimonialsCarousel';
+import ProductCarousel from '../components/ProductCarousel';
+import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -14,10 +13,12 @@ export default function Home() {
         <title>EOz - Your Smart Home Solution</title>
       </Head>
       <Header />
-      <HeroCarousel />
-      <Filters />
-      <UseCases />
-      <TestimonialsCarousel />
+      <main>
+        <Hero />
+        <Filters />
+        <ProductCarousel />
+        <Testimonials />
+      </main>
       <Footer />
     </>
   );

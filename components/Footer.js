@@ -1,23 +1,27 @@
-import styles from '../styles/Footer.module.css';
-import Link from 'next/link';
-
 export default function Footer() {
   return (
-    <footer className={styles.footerSection}>
-      <div className={styles.container}>
-        <div className={styles.links}>
-          <Link href="/about"><a>About Us</a></Link>
-          <Link href="/contact"><a>Contact Us</a></Link>
-          <Link href="/shipping"><a>Shipping & Returns</a></Link>
-          <Link href="/privacy"><a>Privacy Policy</a></Link>
-          <Link href="/terms"><a>Terms of Service</a></Link>
+    <footer style={{ padding:'2rem 1rem', background:'#222', color:'#fff' }}>
+      <div style={{ maxWidth:1200, margin:'0 auto', display:'flex', flexWrap:'wrap', gap:'2rem' }}>
+        <div>
+          <h4>Company</h4>
+          {['About Us','Contact Us','Shipping & Returns','Privacy Policy','Terms of Service','Register as Electrician'].map(link => (
+            <div key={link}><a href="#" style={{ color:'#0cf' }}>{link}</a></div>
+          ))}
         </div>
-        <div className={styles.newsletter}>
-          <p>Subscribe to our newsletter</p>
-          <input type="email" placeholder="Your email" className={styles.input} />
-          <button className={styles.subscribe}>Subscribe</button>
+        <div>
+          <h4>Connect</h4>
+          <div>
+            <input type="email" placeholder="Email address" style={{ padding:'.5rem', borderRadius:4, border:'1px solid #444', marginRight:'0.5rem' }}/>
+            <button style={{ padding:'.5rem 1rem', background:'#0cf', color:'#000', border:'none', borderRadius:4 }}>Subscribe</button>
+          </div>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          {['Instagram','Facebook','YouTube'].map(s => (
+            <a key={s} href="#" style={{ marginRight:'1rem', color:'#0cf' }}>{s}</a>
+          ))}
         </div>
       </div>
     </footer>
-);
+  );
 }

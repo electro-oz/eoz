@@ -14,13 +14,13 @@ const menu = [
       { label: "Sub-device Work with M1 Hub", href: "/matter/subdevice" }
     ]
   },
-  {
-    label: "HomeKit",
-    submenu: [
-      { label: "ZMHK-01 Hub", href: "/homekit/zhmk01" },
-      { label: "HomeKit Devices", href: "/homekit/devices" }
-    ]
-  },
+  // {
+  //   label: "HomeKit",
+  //   submenu: [
+  //     { label: "ZMHK-01 Hub", href: "/homekit/zhmk01" },
+  //     { label: "HomeKit Devices", href: "/homekit/devices" }
+  //   ]
+  // },
   {
     label: "Zigbee",
     submenu: [
@@ -28,12 +28,12 @@ const menu = [
       { label: "Zigbee Handler Download", href: "/zigbee/handler" }
     ]
   },
-  {
-    label: "Wi-Fi",
-    submenu: [
-      { label: "Wi-Fi Devices", href: "/wifi/devices" }
-    ]
-  },
+  // {
+  //   label: "Wi-Fi",
+  //   submenu: [
+  //     { label: "Wi-Fi Devices", href: "/wifi/devices" }
+  //   ]
+  // },
   {
     label: "Motors",
     submenu: [
@@ -60,17 +60,17 @@ const menu = [
       { label: "Water Leak Sensor", href: "/sensors/water" }
     ]
   },
-  { label: "Smart Plugs", href: "/smartplugs" },
+  // { label: "Smart Plugs", href: "/smartplugs" },
   { label: "DIY", href: "/diy" },
-  {
-    label: "Support Center",
-    submenu: [
-      { label: "Contact Us", href: "/support/contact" },
-      { label: "User Manual Download", href: "/support/manual" },
-      { label: "FAQ", href: "/support/faq" },
-      { label: "App Privacy Policy", href: "/support/privacy" }
-    ]
-  }
+  // {
+  //   label: "Support Center",
+  //   submenu: [
+  //     { label: "Contact Us", href: "/support/contact" },
+  //     { label: "User Manual Download", href: "/support/manual" },
+  //     { label: "FAQ", href: "/support/faq" },
+  //     { label: "App Privacy Policy", href: "/support/privacy" }
+  //   ]
+  // }
 ];
 
 function IconBtn({ children, href, label }) {

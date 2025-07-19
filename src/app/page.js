@@ -21,7 +21,7 @@ export default function Home() {
         background: "#FCF9F2"
       }}>
         <Image
-          src="/logo-light.png"
+          src="/logo-dark.png"
           alt="EOZ Logo"
           width={80}
           height={80}

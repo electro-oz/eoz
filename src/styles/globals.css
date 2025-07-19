@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background: var(--color-background);
+  color: var(--color-dark);
+}
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}

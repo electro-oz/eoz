@@ -17,7 +17,10 @@ export default function Header() {
 }, []);
 
 
-  if (!menu) return null;
+  if (!menu) return <div>Could not load menu</div>;
+  if (!menu.menu_items || menu.menu_items.length === 0) return <div>No menu items found</div>; 
+  if (!Array.isArray(menu.menu_items)) return <div>Invalid menu structure</div>;
+  
 
   return (
     <header className="site-header">

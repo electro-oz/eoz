@@ -8,8 +8,14 @@ export default function Header() {
   const [menu, setMenu] = useState(null);
 
   useEffect(() => {
-    fetchHeaderMenu().then(setMenu).catch(console.error);
-  }, []);
+  fetchHeaderMenu()
+    .then(data => {
+      console.log('menu data:', data);
+      setMenu(data);
+    })
+    .catch(console.error);
+}, []);
+
 
   if (!menu) return null;
 

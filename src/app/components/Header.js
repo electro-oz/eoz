@@ -7,14 +7,17 @@ import { fetchHeaderMenu } from '../lib/directus';
 export default function Header() {
   const [menu, setMenu] = useState(null);
 
-  useEffect(() => {
+useEffect(() => {
   fetchHeaderMenu()
     .then(data => {
       console.log('menu data:', data);
       setMenu(data);
     })
-    .catch(console.error);
+    .catch(err => {
+      console.error('Menu fetch failed:', err);
+    });
 }, []);
+
 
 
   if (!menu) return <div>Could not load menu</div>;

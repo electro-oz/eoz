@@ -10,17 +10,20 @@ export default function Header() {
 useEffect(() => {
   fetchHeaderMenu()
     .then(data => {
-      console.log('menu data:', data);
+      console.log('Fetched menu data:', data);
       setMenu(data);
     })
     .catch(err => {
       console.error('Menu fetch failed:', err);
+      setMenu({ error: err.message });
     });
 }, []);
 
 
 
-  if (!menu) return <div>Could not load menu</div>;
+
+if (!menu) return <div>Loading menu...</div>;
+if (menu.error) return <div>Error loading menu: {menu.error}</div>;
   if (!menu.menu_items || menu.menu_items.length === 0) return <div>No menu items found</div>; 
   if (!Array.isArray(menu.menu_items)) return <div>Invalid menu structure</div>;
 
